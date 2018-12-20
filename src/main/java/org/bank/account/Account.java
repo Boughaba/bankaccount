@@ -31,4 +31,9 @@ public class Account {
     public BigDecimal getBalance() {
         return balance;
     }
+
+    public void transfer(BigDecimal amount) {
+
+        this.balance = this.balance.add(amount);
+    }
 }

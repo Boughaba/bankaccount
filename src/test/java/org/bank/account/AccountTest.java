@@ -34,4 +34,14 @@ public class AccountTest {
         }
 
     }
+
+    @Test
+    public void should_balance_equal_110_When_client_transfer_10_and_initial_eq_100(){
+
+        Account account = new Account("Owner", new BigDecimal(100.0));
+
+        account.transfer(new BigDecimal(10));
+
+        assertThat(account.getBalance()).isEqualTo(new BigDecimal(110.0));
+    }
 }

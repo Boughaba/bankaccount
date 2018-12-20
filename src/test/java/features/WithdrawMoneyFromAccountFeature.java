@@ -3,10 +3,11 @@ package features;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.bank.account.Account;
 
 import java.math.BigDecimal;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class WithdrawMoneyFromAccountFeature {
 
